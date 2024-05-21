@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Demo</title>
+    <link rel="stylesheet" href="./css/style_practicamaps.css">
+</head>
+<body>
+    <header>
+        <h1>Evento Demo</h1>
+        <nav>
+            <ul>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ubicacion">
+            <h2>Ubicación del Evento</h2>
+            <div class="map-form-container">
+                <div id="map-container">
+                    <div id="map"></div>
+                </div>
+                <div class="form-container">
+                    <section id="registro">
+                        <h2>Registro</h2>
+                        <form id="registroForm" class="registro-form">
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="fecha">Fecha de Registro:</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                    
+                            <div class="form-group">
+                                <label for="direccion">Dirección:</label>
+                                <input type="text" id="direccion" name="direccion" required>
+                            </div>
+                            <button type="submit">Registrarse</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Evento Demo</p>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPL0gSR2gI_TWVi_EBSdSW5JP9SvGz4JY&callback=initMap" async defer></script>
+    <script src="./javascript/maps.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+.map-form-container {
+    display: flex;
+    justify-content: space-between;
+}
+#map {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto; /* Esto centrará horizontalmente el mapa */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: -60px; /* Inicialmente fuera de la pantalla */
+    transition: bottom 0.5s; /* Agrega una transición suave */
+}
+
+footer.show {
+    bottom: 0; /* Muestra el pie de página */
+}
+
+.registro-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+.map-form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#map-container {
+    width: 65%; /* Modificado para que el mapa ocupe el 65% del contenedor */
+    height: 600px;
+    border-radius: 10px;
+}
+
+.form-container {
+    width: 30%; /* Modificado para que el formulario ocupe el 30% del contenedor */
+}
+
